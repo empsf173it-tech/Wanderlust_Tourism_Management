@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust | Travel & Tourism</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20fill='%23FF5722'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010zm0-7a3%203%200%201%201%200-6%203%203%200%200%201%200%206z'/%3E%3C/svg%3E">
+    <meta name="description" content="Discover the best travel destinations and packages with WanderLust.">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                <span>WanderLust</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-sm btn-outline-secondary fw-bold" id="rtlToggle">RTL</button>
+                    <button class="btn btn-link text-decoration-none p-0" style="color: var(--text-color) !important;" id="themeToggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon fs-5" id="themeIcon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-custom">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary-theme"><i class="bi bi-geo-alt-fill me-2"></i>WanderLust</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-auto d-grid gap-2">
+                <a href="login.html" class="btn btn-outline-custom">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <header class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center animate-on-scroll">
+            <span class="badge bg-primary-theme px-3 py-2 mb-3 fs-6 rounded-pill">Explore The World</span>
+            <h1 class="hero-title mb-4">Discover Your Next <br> Great Adventure</h1>
+            <p class="lead mb-5 mx-auto" style="max-width: 600px;">Join thousands of travelers who trust us to plan their perfect vacations. Stunning destinations await.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="services.html" class="btn btn-primary-custom btn-lg px-5">Explore Packages</a>
+                <a href="about.html" class="btn btn-outline-light btn-lg px-5 font-weight-bold" style="border-width: 2px;">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 2: About Us -->
+    <section id="about" class="py-5 my-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80" alt="About Us" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <h6 class="text-secondary-theme fw-bold text-uppercase tracking-wider">About WanderLust</h6>
+                    <h2 class="display-5 fw-bold mb-4">We Make Your Travel Dreams Come True</h2>
+                    <p class="text-muted fs-5 mb-4">With over 15 years of experience, we specialize in curating unique travel experiences tailored to your desires. From tranquil beaches to thrilling mountain hikes.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary-theme me-3 fs-5"></i> <span class="fs-5">Expert Tour Guides</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary-theme me-3 fs-5"></i> <span class="fs-5">Premium Accommodations</span></li>
+                        <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary-theme me-3 fs-5"></i> <span class="fs-5">24/7 Customer Support</span></li>
+                    </ul>
+                    <a href="services.html" class="btn btn-primary-custom">Our Services <i class="bi bi-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Popular Destinations -->
+    <section class="py-5 bg-card border-top border-bottom" style="background-color: var(--card-bg);">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-secondary-theme fw-bold text-uppercase">Top Destinations</h6>
+                <h2 class="display-5 fw-bold">Explore Popular Places</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 animate-on-scroll">
+                    <div class="card card-custom h-100 border-0">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Paris">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Paris, France</h4>
+                            <p class="text-muted">Experience the city of love and lights.</p>
+                            <a href="#" class="btn btn-outline-custom mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="card card-custom h-100 border-0">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Bali">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Bali, Indonesia</h4>
+                            <p class="text-muted">Relax on pristine beaches and clear waters.</p>
+                            <a href="#" class="btn btn-outline-custom mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="card card-custom h-100 border-0">
+                        <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Swiss Alps">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fw-bold">Swiss Alps</h4>
+                            <p class="text-muted">Adventure through snowy peaks and valleys.</p>
+                            <a href="#" class="btn btn-outline-custom mt-auto">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Why Choose Us (Stats/Icons) -->
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3 animate-on-scroll d-flex flex-column">
+                    <div class="stat-card p-3 p-md-4 rounded-4 h-100 w-100" style="background-color: rgba(0, 150, 136, 0.1);">
+                        <i class="bi bi-globe-americas text-secondary-theme display-4 mb-3 d-block"></i>
+                        <h3 class="fw-bold m-0">150+</h3>
+                        <p class="text-muted m-0 stat-label">Destinations</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 animate-on-scroll d-flex flex-column" style="transition-delay: 0.1s;">
+                    <div class="stat-card p-3 p-md-4 rounded-4 h-100 w-100" style="background-color: rgba(255, 87, 34, 0.1);">
+                        <i class="bi bi-people-fill text-primary-theme display-4 mb-3 d-block"></i>
+                        <h3 class="fw-bold m-0">50k+</h3>
+                        <p class="text-muted m-0 stat-label">Happy Travelers</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 animate-on-scroll d-flex flex-column" style="transition-delay: 0.2s;">
+                    <div class="stat-card p-3 p-md-4 rounded-4 h-100 w-100" style="background-color: rgba(0, 150, 136, 0.1);">
+                        <i class="bi bi-star-fill text-secondary-theme display-4 mb-3 d-block"></i>
+                        <h3 class="fw-bold m-0">4.9</h3>
+                        <p class="text-muted m-0 stat-label">Average Rating</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 animate-on-scroll d-flex flex-column" style="transition-delay: 0.3s;">
+                    <div class="stat-card p-3 p-md-4 rounded-4 h-100 w-100" style="background-color: rgba(255, 87, 34, 0.1);">
+                        <i class="bi bi-award-fill text-primary-theme display-4 mb-3 d-block"></i>
+                        <h3 class="fw-bold m-0">12</h3>
+                        <p class="text-muted m-0 stat-label">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Testimonials -->
+    <section class="py-5 bg-card border-top border-bottom" style="background-color: var(--card-bg);">
+        <div class="container py-5">
+            <div class="text-center mb-5 animate-on-scroll">
+                <h6 class="text-secondary-theme fw-bold text-uppercase">Testimonials</h6>
+                <h2 class="display-5 fw-bold">What Our Clients Say</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-5 animate-on-scroll">
+                    <div class="card border-0 shadow-sm p-4 h-100" style="background-color: var(--bg-color);">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="User 1" class="rounded-circle me-3" width="60" height="60" style="object-fit: cover;">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Sarah Jenkins</h5>
+                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                            </div>
+                        </div>
+                        <p class="text-muted fst-italic">"WanderLust planned the perfect honeymoon for us in Bali. Every detail was taken care of. Highly recommended!"</p>
+                    </div>
+                </div>
+                <div class="col-md-5 animate-on-scroll" style="transition-delay: 0.1s;">
+                    <div class="card border-0 shadow-sm p-4 h-100" style="background-color: var(--bg-color);">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="User 2" class="rounded-circle me-3" width="60" height="60" style="object-fit: cover;">
+                            <div>
+                                <h5 class="mb-0 fw-bold">Michael Chen</h5>
+                                <span class="text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                            </div>
+                        </div>
+                        <p class="text-muted fst-italic">"An unforgettable trip to the Swiss Alps. The tour guides were extremely knowledgeable and friendly."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: CTA / Contact -->
+    <section id="contact" class="py-5 my-5 text-center animate-on-scroll">
+        <div class="container">
+            <div class="p-5 rounded-4 bg-primary-theme text-white shadow-lg relative overflow-hidden">
+                <h2 class="display-5 fw-bold mb-3">Ready For Your Next Trip?</h2>
+                <p class="lead mb-4">Subscribe to our newsletter and get 15% off your first booking!</p>
+                <form class="d-flex justify-content-center mx-auto" style="max-width: 500px;">
+                    <input type="email" class="form-control form-control-lg me-2 border-0" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-dark btn-lg fw-bold">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container pb-4">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+                        <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                        <span class="fs-3 fw-bold">WanderLust</span>
+                    </a>
+                    <p class="text-muted">Your premier travel partner providing unforgettable experiences across the globe. Let's travel together.</p>
+                    <div class="social-icons mt-4">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                        <li class="mb-2"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="#">FAQs</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p class="text-muted">Get the latest news and offers.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-4 text-center">
+                <p class="text-muted mb-0">&copy; 2026 WanderLust Travel & Tourism. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

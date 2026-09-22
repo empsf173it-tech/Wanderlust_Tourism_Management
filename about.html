@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | WanderLust</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20fill='%23FF5722'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010zm0-7a3%203%200%201%201%200-6%203%203%200%200%201%200%206z'/%3E%3C/svg%3E">
+    <meta name="description" content="Learn more about WanderLust.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                <span>WanderLust</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-sm btn-outline-secondary fw-bold" id="rtlToggle">RTL</button>
+                    <button class="btn btn-link text-decoration-none p-0" style="color: var(--text-color) !important;" id="themeToggle"
+                        aria-label="Toggle Theme">
+                        <i class="bi bi-moon fs-5" id="themeIcon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-custom">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary-theme"><i class="bi bi-geo-alt-fill me-2"></i>WanderLust
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active fs-5" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-auto d-grid gap-2">
+                <a href="login.html" class="btn btn-outline-custom">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+        <header class="hero-section"
+            style="height: 40vh; min-height: 300px; background-image: url('https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-center animate-on-scroll">
+                <h1 class="hero-title mb-3 text-white">About Us</h1>
+                <p class="lead text-white mx-auto" style="max-width: 600px;">Learn more about our mission and the team
+                    behind WanderLust.</p>
+            </div>
+        </header>
+
+        <!-- About Content -->
+        <section class="py-5 my-5">
+            <div class="container">
+                <div class="row align-items-center g-5 mb-5">
+                    <div class="col-lg-6 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=800&q=80"
+                            alt="About Us" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                    <div class="col-lg-6 animate-on-scroll">
+                        <h6 class="text-secondary-theme fw-bold text-uppercase">Our Story</h6>
+                        <h2 class="display-5 fw-bold mb-4">We Make Your Travel Dreams Come True</h2>
+                        <p class="text-muted fs-5 mb-4">Since 2011, WanderLust has been organizing unforgettable trips
+                            for adventurous souls around the globe. We believe that traveling is more than just
+                            sightseeing; it's about experiencing the local culture, food, and traditions.</p>
+                        <p class="text-muted fs-5">Our team of experienced travel agents and local guides ensure that
+                            every detail of your trip is planned perfectly so you can focus on making memories.</p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center g-5 flex-lg-row-reverse">
+                    <div class="col-lg-6 animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80"
+                            alt="Mission" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                    <div class="col-lg-6 animate-on-scroll">
+                        <h6 class="text-secondary-theme fw-bold text-uppercase">Our Mission</h6>
+                        <h2 class="display-5 fw-bold mb-4">Inspiring Sustainable Travel</h2>
+                        <p class="text-muted fs-5 mb-4">We are committed to promoting eco-friendly travel practices that
+                            respect local communities and protect natural habitats. Every trip you book with us
+                            contributes to local conservation efforts.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-3 d-flex align-items-center"><i
+                                    class="bi bi-globe-americas text-primary-theme me-3 fs-5"></i> <span
+                                    class="fs-5">Eco-friendly Partnerships</span></li>
+                            <li class="mb-3 d-flex align-items-center"><i
+                                    class="bi bi-heart-fill text-primary-theme me-3 fs-5"></i> <span
+                                    class="fs-5">Community Support</span></li>
+                            <li class="mb-3 d-flex align-items-center"><i
+                                    class="bi bi-tree-fill text-primary-theme me-3 fs-5"></i> <span class="fs-5">Carbon
+                                    Offset Programs</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Meet Our Team -->
+        <section class="py-5 bg-card border-top border-bottom" style="background-color: var(--card-bg);">
+            <div class="container py-5">
+                <div class="text-center mb-5 animate-on-scroll">
+                    <h6 class="text-secondary-theme fw-bold text-uppercase">The People Behind It All</h6>
+                    <h2 class="display-5 fw-bold">Meet Our Team</h2>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-lg-3 col-md-6 animate-on-scroll">
+                        <div class="card card-custom h-100 border-0 p-4">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="John Doe" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4 class="fw-bold mb-1">John Doe</h4>
+                            <p class="text-primary-theme fw-semibold mb-3">Founder & CEO</p>
+                            <p class="text-muted small">Passionate traveler with 20+ years of experience in the tourism industry.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="card card-custom h-100 border-0 p-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Jane Smith" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4 class="fw-bold mb-1">Jane Smith</h4>
+                            <p class="text-primary-theme fw-semibold mb-3">Lead Tour Guide</p>
+                            <p class="text-muted small">Expert in cultural tours and ensuring authentic local experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="card card-custom h-100 border-0 p-4">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80" alt="Mike Johnson" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4 class="fw-bold mb-1">Mike Johnson</h4>
+                            <p class="text-primary-theme fw-semibold mb-3">Operations Manager</p>
+                            <p class="text-muted small">The mastermind behind our flawless logistics and smooth bookings.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 animate-on-scroll" style="transition-delay: 0.3s;">
+                        <div class="card card-custom h-100 border-0 p-4">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Emily Chen" class="rounded-circle mx-auto mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+                            <h4 class="fw-bold mb-1">Emily Chen</h4>
+                            <p class="text-primary-theme fw-semibold mb-3">Customer Relations</p>
+                            <p class="text-muted small">Dedicated to making sure every client has the trip of a lifetime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Core Values -->
+        <section class="py-5 my-5">
+            <div class="container text-center">
+                <div class="mb-5 animate-on-scroll">
+                    <h6 class="text-secondary-theme fw-bold text-uppercase">Why Choose Us</h6>
+                    <h2 class="display-5 fw-bold">Our Core Values</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4 animate-on-scroll">
+                        <div class="p-4 rounded-4 bg-card h-100 shadow-sm border" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                            <i class="bi bi-shield-check text-primary-theme display-4 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">Safety First</h4>
+                            <p class="text-muted">Your safety is our top priority. We partner only with certified and trusted local guides and accommodations.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="p-4 rounded-4 bg-card h-100 shadow-sm border" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                            <i class="bi bi-currency-dollar text-primary-theme display-4 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">Best Value</h4>
+                            <p class="text-muted">We guarantee competitive pricing without compromising on the quality and exclusivity of your experiences.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="p-4 rounded-4 bg-card h-100 shadow-sm border" style="background-color: var(--card-bg); border-color: var(--border-color) !important;">
+                            <i class="bi bi-emoji-sunglasses text-primary-theme display-4 mb-3 d-block"></i>
+                            <h4 class="fw-bold mb-3">Unforgettable Trips</h4>
+                            <p class="text-muted">We go beyond standard itineraries to bring you hidden gems and truly personalized adventures.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container pb-4">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+                            <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                            <span class="fs-3 fw-bold">WanderLust</span>
+                        </a>
+                        <p class="text-muted">Your premier travel partner providing unforgettable experiences across the
+                            globe. Let's travel together.</p>
+                        <div class="social-icons mt-4">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="about.html">About Us</a></li>
+                            <li class="mb-2"><a href="services.html">Services</a></li>
+                            <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                            <li class="mb-2"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h5 class="text-white mb-4">Support</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a href="#">FAQs</a></li>
+                            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p class="text-muted">Get the latest news and offers.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-secondary mt-4 pt-4 text-center">
+                    <p class="text-muted mb-0">&copy; 2026 WanderLust Travel & Tourism. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <button id="backToTop" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>

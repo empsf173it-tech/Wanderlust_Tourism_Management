@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | WanderLust</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20fill='%23FF5722'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010zm0-7a3%203%200%201%201%200-6%203%203%200%200%201%200%206z'/%3E%3C/svg%3E">
+    <meta name="description" content="View our travel gallery.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                <span>WanderLust</span>
+            </a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-sm btn-outline-secondary fw-bold" id="rtlToggle">RTL</button>
+                    <button class="btn btn-link text-decoration-none p-0" style="color: var(--text-color) !important;" id="themeToggle"
+                        aria-label="Toggle Theme">
+                        <i class="bi bi-moon fs-5" id="themeIcon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline-custom">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Mobile Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold text-primary-theme"><i class="bi bi-geo-alt-fill me-2"></i>WanderLust
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column">
+            <ul class="navbar-nav mb-4">
+                <li class="nav-item"><a class="nav-link fs-5" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link active fs-5" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link fs-5" href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-auto d-grid gap-2">
+                <a href="login.html" class="btn btn-outline-custom">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+        <header class="hero-section"
+            style="height: 40vh; min-height: 300px; background-image: url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1920&q=80');">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content text-center animate-on-scroll">
+                <h1 class="hero-title mb-3 text-white">Our Gallery</h1>
+                <p class="lead text-white mx-auto" style="max-width: 600px;">A collection of beautiful moments captured
+                    around the world.</p>
+            </div>
+        </header>
+
+        <!-- Gallery Content -->
+        <section class="py-5 my-5">
+            <div class="container">
+                <div class="row masonry-grid">
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 1">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 2">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 3">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 4">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 5">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 6">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 7">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll" style="transition-delay: 0.1s;">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 8">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-on-scroll" style="transition-delay: 0.2s;">
+                        <div class="gallery-item shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80"
+                                alt="Gallery 9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container pb-4">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+                            <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                            <span class="fs-3 fw-bold">WanderLust</span>
+                        </a>
+                        <p class="text-muted">Your premier travel partner providing unforgettable experiences across the
+                            globe. Let's travel together.</p>
+                        <div class="social-icons mt-4">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h5 class="text-white mb-4">Company</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="about.html">About Us</a></li>
+                            <li class="mb-2"><a href="services.html">Services</a></li>
+                            <li class="mb-2"><a href="gallery.html">Gallery</a></li>
+                            <li class="mb-2"><a href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h5 class="text-white mb-4">Support</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a href="#">FAQs</a></li>
+                            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <h5 class="text-white mb-4">Newsletter</h5>
+                        <p class="text-muted">Get the latest news and offers.</p>
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Address">
+                            <button class="btn btn-primary-custom" type="button"><i class="bi bi-send"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top border-secondary mt-4 pt-4 text-center">
+                    <p class="text-muted mb-0">&copy; 2026 WanderLust Travel & Tourism. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <button id="backToTop" aria-label="Back to Top"><i class="bi bi-arrow-up"></i></button>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>

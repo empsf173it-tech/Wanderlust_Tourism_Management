@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | WanderLust</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%20fill='%23FF5722'%20viewBox='0%200%2016%2016'%3E%3Cpath%20d='M8%2016s6-5.686%206-10A6%206%200%200%200%202%206c0%204.314%206%2010%206%2010zm0-7a3%203%200%201%201%200-6%203%203%200%200%201%200%206z'/%3E%3C/svg%3E">
+    <meta name="description" content="Login to your WanderLust account.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+        <div class="auth-bg" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1920&q=80');">
+        <div class="position-fixed top-0 end-0 p-3 d-flex gap-2" style="z-index: 1050;">
+            <button class="btn btn-sm btn-outline-light fw-bold" id="rtlToggle">RTL</button>
+            <button class="btn btn-link text-decoration-none p-0 text-white" id="themeToggle" aria-label="Toggle Theme">
+                <i class="bi bi-moon fs-5" id="themeIcon"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-5">
+                    <div class="auth-card animate-on-scroll is-visible text-center">
+                        <a href="index.html" class="text-decoration-none mb-4 d-flex align-items-center justify-content-center mt-3">
+                            <i class="bi bi-geo-alt-fill text-primary-theme fs-1 me-2"></i>
+                            <h1 class="text-dark fw-bold m-0" style="color: var(--text-color) !important;">WanderLust</h1>
+                        </a>
+                        
+                        <h4 class="fw-bold mb-4">Welcome Back</h4>
+                        
+                        <form action="index.html" method="GET">
+                            <div class="mb-3 text-start">
+                                <label class="form-label fw-bold">Email address</label>
+                                <input type="email" class="form-control form-control-lg" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3 text-start">
+                                <label class="form-label fw-bold">Password</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control form-control-lg border-end-0" placeholder="••••••••" id="loginPassword" required>
+                                    <button class="btn border border-start-0 bg-transparent text-muted toggle-password" type="button" onclick="const p=document.getElementById('loginPassword'); p.type=p.type==='password'?'text':'password'; this.querySelector('i').classList.toggle('bi-eye'); this.querySelector('i').classList.toggle('bi-eye-slash');">
+                                        <i class="bi bi-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberMe">
+                                    <label class="form-check-label small" for="rememberMe">Remember me</label>
+                                </div>
+                                <a href="#" class="text-primary-theme text-decoration-none small fw-normal">Forgot Password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom btn-lg w-100 mb-4">Sign In</button>
+                        </form>
+
+                        <div class="position-relative mb-4">
+                            <hr class="text-muted">
+                            <span class="position-absolute top-50 start-50 translate-middle px-3" style="background: var(--card-bg); color: var(--text-color);">Or login with</span>
+                        </div>
+
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button class="btn btn-outline-secondary rounded-circle" style="width: 50px; height: 50px;"><i class="bi bi-google"></i></button>
+                            <button class="btn btn-outline-secondary rounded-circle" style="width: 50px; height: 50px;"><i class="bi bi-facebook"></i></button>
+                            <button class="btn btn-outline-secondary rounded-circle" style="width: 50px; height: 50px;"><i class="bi bi-apple"></i></button>
+                        </div>
+
+                        <p class="mb-0 text-muted">Don't have an account? <a href="signup.html" class="text-primary-theme fw-bold text-decoration-none">Sign Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
