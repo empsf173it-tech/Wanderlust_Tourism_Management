@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Theme Switcher
-    const themeToggleBtn = document.getElementById('themeToggle');
+    const themeToggleBtns = document.querySelectorAll('.themeToggleBtn, #themeToggle');
     const htmlElement = document.documentElement;
-    const themeIcon = document.getElementById('themeIcon');
+    const themeIcons = document.querySelectorAll('.themeIcon, #themeIcon');
 
     // Check for saved theme
     const savedTheme = localStorage.getItem('theme');
@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
         updateThemeIcon(savedTheme);
     }
 
-    if(themeToggleBtn) {
-        themeToggleBtn.addEventListener('click', () => {
+    themeToggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
             const currentTheme = htmlElement.getAttribute('data-theme');
             const targetTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
@@ -20,17 +20,18 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', targetTheme);
             updateThemeIcon(targetTheme);
         });
-    }
+    });
 
     function updateThemeIcon(theme) {
-        if(!themeIcon) return;
-        if (theme === 'dark') {
-            themeIcon.classList.remove('bi-moon');
-            themeIcon.classList.add('bi-sun');
-        } else {
-            themeIcon.classList.remove('bi-sun');
-            themeIcon.classList.add('bi-moon');
-        }
+        themeIcons.forEach(icon => {
+            if (theme === 'dark') {
+                icon.classList.remove('bi-moon');
+                icon.classList.add('bi-sun');
+            } else {
+                icon.classList.remove('bi-sun');
+                icon.classList.add('bi-moon');
+            }
+        });
     }
 
     // Back to Top Button
@@ -81,12 +82,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // RTL Toggle
-    const rtlToggleBtn = document.getElementById('rtlToggle');
-    if (rtlToggleBtn) {
-        rtlToggleBtn.addEventListener('click', () => {
+    const rtlToggleBtns = document.querySelectorAll('.rtlToggleBtn, #rtlToggle');
+    rtlToggleBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
             const currentDir = htmlElement.getAttribute('dir');
             const targetDir = currentDir === 'rtl' ? 'ltr' : 'rtl';
             htmlElement.setAttribute('dir', targetDir);
         });
-    }
+    });
 });
