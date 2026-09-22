@@ -127,6 +127,21 @@ body {
     padding: 1.5rem;
 }
 
+/* Footer Brand */
+.footer-brand {
+    color: var(--primary-color) !important;
+    text-shadow: 0 1px 4px rgba(255, 87, 34, 0.18);
+    transition: color 0.2s;
+}
+.footer-brand:hover {
+    color: var(--secondary-color) !important;
+    text-decoration: none;
+}
+[data-theme="dark"] .footer-brand {
+    color: #ff7043 !important;
+    text-shadow: 0 1px 8px rgba(255, 112, 67, 0.35);
+}
+
 /* Footer */
 footer {
     background-color: var(--card-bg);
