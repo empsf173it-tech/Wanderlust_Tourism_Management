@@ -13,20 +13,20 @@
 <body>
 
         <div class="auth-bg" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=1920&q=80');">
+            <div class="position-fixed top-0 end-0 p-3 d-flex gap-2" style="z-index: 1050;">
+                <button class="btn btn-sm btn-outline-secondary fw-bold" id="rtlToggle">RTL</button>
+                <button class="btn btn-link text-decoration-none p-0" style="color: var(--text-color);" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="bi bi-moon fs-5" id="themeIcon"></i>
+                </button>
+            </div>
 
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6">
                     <div class="auth-card animate-on-scroll is-visible text-center">
-                        <div class="position-absolute top-0 end-0 p-3 d-flex gap-2" style="z-index: 10;">
-                            <button class="btn btn-sm btn-outline-secondary fw-bold" id="rtlToggle">RTL</button>
-                            <button class="btn btn-link text-decoration-none p-0" style="color: var(--text-color);" id="themeToggle" aria-label="Toggle Theme">
-                                <i class="bi bi-moon fs-5" id="themeIcon"></i>
-                            </button>
-                        </div>
-                        <a href="index.html" class="text-decoration-none mb-3 d-flex align-items-center justify-content-center mt-3">
-                            <i class="bi bi-geo-alt-fill text-primary-theme fs-2 me-2"></i>
-                            <h1 class="text-dark fw-bold m-0" style="color: var(--text-color) !important;">WanderLust</h1>
+                        <a class="navbar-brand d-flex align-items-center justify-content-center mb-3 mt-3" href="index.html">
+                            <i class="bi bi-geo-alt-fill text-primary-theme me-2 fs-2"></i>
+                            <span>WanderLust</span>
                         </a>
                         
                         <h4 class="fw-bold mb-4">Create an Account</h4>

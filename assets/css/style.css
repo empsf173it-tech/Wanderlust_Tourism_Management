@@ -21,7 +21,7 @@ body {
     color: var(--text-color);
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     transition: background-color 0.3s ease, color 0.3s ease;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 /* Typography & Colors */
@@ -65,6 +65,9 @@ body {
     background-color: var(--bg-color);
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     transition: background-color 0.3s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
 }
 .navbar-brand span {
     color: var(--primary-color);
@@ -304,6 +307,10 @@ footer .text-muted {
     margin-left: 0 !important;
     margin-right: auto !important;
 }
+[dir="rtl"] .offcanvas-header .btn-close {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
 
 /* Active Nav Link Highlight */
 .navbar-nav .nav-link.active {
@@ -447,7 +454,7 @@ footer .text-muted {
 
 /* Global Overflow Prevention */
 html, body {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 /* Destination Cards - Center the third card on tablet */
